@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shadab Chowdhury Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
     <div class="name">Shadab Chowdhury</div>
     <nav>
@@ -20,46 +22,50 @@
     </nav>
   </header>
 
-  <main>
-    <section id="about">
-      <img src="your-image.jpg" alt="Profile Picture" />
-      <h2>About Me</h2>
-      <p>I am a web developer who loves building responsive and accessible web apps...</p>
-    </section>
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="profile.jpg" alt="Profile Picture" style="width:150px; border-radius:10px;" />
+    <p>I am a web developer who loves building responsive and accessible web apps. I enjoy turning ideas into reality using code and creating user-friendly experiences.</p>
+  </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li><img src="html-logo.png" alt="HTML" />HTML</li>
-        <li><img src="css-logo.png" alt="CSS" />CSS</li>
-        <li><img src="js-logo.png" alt="JavaScript" />JavaScript</li>
-        <!-- Add 2 default + 3 new skills -->
-      </ul>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li><img src="html-logo.png" alt="HTML" width="40" /> HTML</li>
+      <li><img src="css-logo.png" alt="CSS" width="40" /> CSS</li>
+      <li><img src="js-logo.png" alt="JavaScript" width="40" /> JavaScript</li>
+    </ul>
+  </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>My Portfolio Site:</strong> A personal website showcasing my skills.</li>
-        <li><strong>Weather App:</strong> Uses an API to show real-time weather.</li>
-        <li><strong>To-Do List:</strong> A productivity app with local storage.</li>
-      </ul>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>My Portfolio Site:</strong> A personal website showcasing my skills.</li>
+      <li><strong>Weather App:</strong> Uses an API to show real-time weather.</li>
+      <li><strong>To-Do List:</strong> A productivity app with local storage.</li>
+    </ul>
+  </section>
 
-    <section id="recommendations">
-      <h2>Recommendations</h2>
-      <ul id="rec-list">
-        <li>“Shadab is a dedicated learner and a great team player.”</li>
-        <li>“Great communication and reliable in project deadlines.”</li>
-        <li>“Always proactive and eager to grow technically.”</li>
-      </ul>
-      <input type="text" id="recInput" placeholder="Add your recommendation..." />
-      <button onclick="addRecommendation()">Submit</button>
-    </section>
-  </main>
+  <!-- Recommendations Section -->
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <ul id="rec-list">
+      <li>“Shadab is a dedicated learner and a great team player.”</li>
+      <li>“Great communication and reliable in project deadlines.”</li>
+      <li>“Always proactive and eager to grow technically.”</li>
+    </ul>
 
+    <input type="text" id="recInput" placeholder="Add your recommendation..." />
+    <button onclick="addRecommendation()">Submit</button>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <a href="#"><span>🏠</span> Home</a>
+    <a href="#"><span style="font-size: 24px;">🏠</span> Home</a>
   </footer>
+
 </body>
 </html>
