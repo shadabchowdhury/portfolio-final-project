@@ -29,3 +29,19 @@ nav a:hover {
   align-items: center;
   gap: 5px;
 }
+.recommendation-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  font-style: italic;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
