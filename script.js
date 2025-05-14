@@ -1,10 +1,15 @@
 function addRecommendation() {
   const input = document.getElementById("recInput");
-  if (input.value.trim() !== "") {
-    const li = document.createElement("li");
-    li.textContent = input.value;
-    document.getElementById("rec-list").appendChild(li);
+  const text = input.value.trim();
+
+  if (text !== "") {
+    const container = document.querySelector(".recommendation-cards");
+    const card = document.createElement("div");
+    card.className = "card";
+    card.textContent = `“${text}”`;
+    container.appendChild(card);
     alert("Thank you for submitting a recommendation!");
     input.value = "";
   }
 }
+
